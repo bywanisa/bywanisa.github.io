@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    background-color: #000;
+    color: antiquewhite;
+}
+#fullpage {
+    width: 80%;
+    margin: auto;
+}
+#fp-nav ul li a span {}
+.section {
+    /*
+    border-image-source: linear-gradient(#6C5B7B, #C06C84,#355C7D);
+    border-image-source: linear-gradient(to right ,#237A57, #093028, #237A57);
+    border-image-source: linear-gradient(#c31432, #240b36,#c31432);*/
+    width: 100%;
+}
+.section::before {
+    border-image-slice: 10;
+}
+@keyframes colorchange {
+    0%   {border-color: #6C5B7B;}
+    33%  {border-color: #C06C84;}
+    66%  {border-color: #355C7D;}
+    100%  {border-color: #6C5B7B;}
+}
+.section h1 {
+    display: inline;
+    text-decoration: underline;
+}
+#profile-name {
+    font-size: 6em;
+    text-align: center;
+}
+#profile-name .name {
+    position: relative;
+    margin: 50px;
+    padding: 50px;
+}
+#profile-name .name-device {
+    display: none;
+}
+#profile-name .name-device p {
+    display: inline;
+    animation: name 3s 1s forwards;
+}
+#profile-name p {
+    opacity: 0;
+    animation: name 3s 2s forwards;
+}
+@keyframes name {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#profile-name .name::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    border: 10px solid;
+    animation: profile-name 2s forwards, colorchange 8s infinite;
+}
+#profile-name .name::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: 5px;
+    bottom: 5px;
+    width: 100%;
+    height: 100%;
+    border: 10px solid;
+    animation: profile-name 2s forwards, colorchange 8s infinite;
+}
+@keyframes profile-name {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+.box {
+    padding: 50px;
+    margin: auto;
+    border: 10px solid;
+    animation: colorchange 8s infinite;
+}
+#bio .fp-tableCell h1,
+#bio .fp-tableCell blockquote,
+#exp .experience h1,
+#exp .experience ul li,
+#exp .skills h1,
+#exp .skills ul li {
+	opacity: 0;
+	transition: opacity 3s ease-in-out;
+}
+
+#bio.active .fp-tableCell h1,
+#bio.active .fp-tableCell blockquote,
+#exp.active .experience h1,
+#exp.active .experience ul li,
+#exp.active .skills h1,
+#exp.active .skills ul li {
+	opacity: 1;
+}
+#exp.active .skills h1,
+#exp.active .skills ul li {
+    transition-delay: 1s;
+}
+.exp-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.exp-box .experience, .exp-box .skills {
+    flex-grow: 1;
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+    #profile-name .name-device {
+        font-size: 50px;
+    }
+}
+@media all and (max-width: 767px) {
+    body {
+        margin: 20px auto;
+        font-size: 14px;
+    }
+    .box {
+        max-height: 568px;
+        padding: 10px;
+        border: 5px solid;
+    }
+    #profile-name .name {
+        display: none;
+    }
+    #profile-name .name-device {
+        display: block;
+        font-size: 35px;
+    }
+    .exp-box {
+        flex-direction: column;
+    }
+    .exp-box .skills {
+        display: flex;
+        flex-direction: row;
+    }
+}
