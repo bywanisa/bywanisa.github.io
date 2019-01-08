@@ -60,7 +60,7 @@ body {
     width: 100%;
     height: 100%;
     border: 10px solid;
-    animation: name 8s forwards, colorchange 8s infinite;
+    animation: name 8s forwards;
 }
 #profile-name .name::after {
     content: '';
@@ -71,7 +71,13 @@ body {
     width: 100%;
     height: 100%;
     border: 10px solid;
+    animation: name 8s forwards;
+}
+@media all and (min-width: 1024px) {
+    #profile-name .name::before,
+    #profile-name .name::after{
     animation: name 8s forwards, colorchange 8s infinite;
+    }
 }
 @keyframes profile-name {
     0% {
@@ -205,6 +211,15 @@ body {
 .projects a img {
     width: 100%;
 }
+@media all and (max-width: 1024px) {
+    #profile-name .name {
+        display: none;
+    }
+    #profile-name .name-device {
+        display: block;
+        font-size: 96px;
+    }
+}
 @media all and (min-width: 768px) and (max-width: 992px) {
     #profile-name .name-device {
         font-size: 50px;
@@ -215,17 +230,13 @@ body {
         margin: 20px auto;
         font-size: 14px;
     }
+    #profile-name .name-device {
+        font-size: 35px;
+    }
     .box {
         max-height: 568px;
         padding: 10px;
         border: 5px solid;
-    }
-    #profile-name .name {
-        display: none;
-    }
-    #profile-name .name-device {
-        display: block;
-        font-size: 35px;
     }
     .exp-box {
         flex-direction: column;
