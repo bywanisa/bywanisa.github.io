@@ -9,7 +9,6 @@ body {
     width: 80%;
     margin: auto;
 }
-#fp-nav ul li a span {}
 .section {
     /*
     border-image-source: linear-gradient(#6C5B7B, #C06C84,#355C7D);
@@ -19,12 +18,6 @@ body {
 }
 .section::before {
     border-image-slice: 10;
-}
-@keyframes colorchange {
-    0%   {border-color: #6C5B7B;}
-    33%  {border-color: #C06C84;}
-    66%  {border-color: #355C7D;}
-    100%  {border-color: #6C5B7B;}
 }
 .section h1 {
     display: inline;
@@ -68,6 +61,8 @@ body {
     height: 100%;
     border: 10px solid;
     animation: profile-name 2s forwards, colorchange 8s infinite;
+    -webkit-animation: profile-name 2s forwards, colorchange 8s infinite;
+    -moz-animation: profile-name 2s forwards, colorchange 8s infinite;
 }
 #profile-name .name::after {
     content: '';
@@ -79,6 +74,8 @@ body {
     height: 100%;
     border: 10px solid;
     animation: profile-name 2s forwards, colorchange 8s infinite;
+    -webkit-animation: profile-name 2s forwards, colorchange 8s infinite;
+    -moz-animation: profile-name 2s forwards, colorchange 8s infinite;
 }
 @keyframes profile-name {
     0% {
@@ -90,20 +87,98 @@ body {
         height: 100%;
     }
 }
+@-webkit-keyframes profile-name {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+@-webkit-keyframes profile-name {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+#profile-img .img-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#profile-img img {
+    max-width: 100%;
+}
+#profile-img .fp-tableCell img#profile1,
+#profile-img .fp-tableCell img#profile2,
+#profile-img .fp-tableCell img#profile3 {
+    transform: translateY(-1000px);
+    opacity: 0;
+	transition: transform .75s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+                opacity .75s ease-in-out;
+}
+#profile-img.active .fp-tableCell img#profile1,
+#profile-img.active .fp-tableCell img#profile2,
+#profile-img.active .fp-tableCell img#profile3 {
+	transform: translateY(0);
+    opacity: 1;
+    filter: grayscale(50%) brightness(150%) saturate(150%) contrast(1.5);
+    -webkit-filter: grayscale(50%) brightness(150%) saturate(150%) contrast(1.5);
+}
+#profile-img.active .fp-tableCell img#profile2 {
+    transition-delay: .25s;
+}
+#profile-img.active .fp-tableCell img#profile3 {
+    transition-delay: .50s;
+}
 .box {
     padding: 50px;
     margin: auto;
     border: 10px solid;
     animation: colorchange 8s infinite;
+    -webkit-animation: colorchange 8s infinite;
+    -moz-animation: colorchange 8s infinite;
+}
+@keyframes colorchange {
+    0%   {border-color: #6C5B7B;}
+    33%  {border-color: #C06C84;}
+    66%  {border-color: #355C7D;}
+    100%  {border-color: #6C5B7B;}
+}
+@-webkit-keyframes colorchange {
+    0%   {border-color: #6C5B7B;}
+    33%  {border-color: #C06C84;}
+    66%  {border-color: #355C7D;}
+    100%  {border-color: #6C5B7B;}
+}
+@-moz-keyframes colorchange {
+    0%   {border-color: #6C5B7B;}
+    33%  {border-color: #C06C84;}
+    66%  {border-color: #355C7D;}
+    100%  {border-color: #6C5B7B;}
 }
 #bio .fp-tableCell h1,
 #bio .fp-tableCell blockquote,
 #exp .experience h1,
 #exp .experience ul li,
 #exp .skills h1,
-#exp .skills ul li {
+#exp .skills ul li,
+#portfolio .fp-tableCell h1,
+#portfolio .fp-tableCell address {
 	opacity: 0;
 	transition: opacity 3s ease-in-out;
+}
+#portfolio .projects a img#zcc,
+#portfolio .projects a img#ktpan,
+#portfolio .projects a img#pilab,
+#portfolio .projects a img#fylo {
+    opacity: 0;
+	transition: opacity 1s;
 }
 
 #bio.active .fp-tableCell h1,
@@ -111,12 +186,28 @@ body {
 #exp.active .experience h1,
 #exp.active .experience ul li,
 #exp.active .skills h1,
-#exp.active .skills ul li {
+#exp.active .skills ul li,
+#portfolio.active .fp-tableCell h1,
+#portfolio.active .projects a img#zcc,
+#portfolio.active .projects a img#ktpan,
+#portfolio.active .projects a img#pilab,
+#portfolio.active .projects a img#fylo,
+#portfolio.active .fp-tableCell address {
 	opacity: 1;
 }
 #exp.active .skills h1,
-#exp.active .skills ul li {
+#exp.active .skills ul li,
+#portfolio.active .projects a img#fylo {
     transition-delay: 1s;
+}
+#portfolio.active .projects a img#pilab {
+    transition-delay: 2s;
+}
+#portfolio.active .projects a img#ktpan {
+    transition-delay: 3s;
+}
+#portfolio.active .projects a img#zcc {
+    transition-delay: 4s;
 }
 .exp-box {
     display: flex;
@@ -125,6 +216,18 @@ body {
 }
 .exp-box .experience, .exp-box .skills {
     flex-grow: 1;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
+    width: 100%;
+    margin-top: 20px;
+}
+.projects a {
+    margin: auto 15px;
+}
+.projects a img {
+    width: 100%;
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
     #profile-name .name-device {
@@ -155,4 +258,15 @@ body {
         display: flex;
         flex-direction: row;
     }
+}
+address {
+    text-align: right;
+    padding-top: 15px;
+}
+a {
+    color: aquamarine;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
