@@ -10,10 +10,6 @@ body {
     margin: auto;
 }
 .section {
-    /*
-    border-image-source: linear-gradient(#6C5B7B, #C06C84,#355C7D);
-    border-image-source: linear-gradient(to right ,#237A57, #093028, #237A57);
-    border-image-source: linear-gradient(#c31432, #240b36,#c31432);*/
     width: 100%;
 }
 .section::before {
@@ -31,13 +27,6 @@ body {
     position: relative;
     margin: 50px;
     padding: 50px;
-}
-#profile-name .name-device {
-    display: none;
-}
-#profile-name .name-device p {
-    display: inline;
-    animation: name 3s 1s forwards;
 }
 #profile-name p {
     opacity: 0;
@@ -60,8 +49,6 @@ body {
     width: 100%;
     height: 100%;
     border: 10px solid;
-    /*animation: profile-name 2s forwards, colorchange 8s infinite;*/
-    animation: name 8s forwards;
 }
 #profile-name .name::after {
     content: '';
@@ -72,7 +59,6 @@ body {
     width: 100%;
     height: 100%;
     border: 10px solid;
-    animation: name 8s forwards;
 }
 @media all and (min-width: 1024px) {
     #profile-name .name::before,
@@ -80,15 +66,36 @@ body {
     animation: name 8s forwards, colorchange 8s infinite;
     }
 }
-@keyframes profile-name {
+#profile-name .name-device {
+    display: none;
+}
+#profile-name .name-device p {
+    display: inline;
+    opacity: 0;
+    animation: name-device 4s forwards;
+}
+@keyframes name-device {
     0% {
-        width: 0%;
-        height: 0%;
+        opacity: 0;
     }
     100% {
-        width: 100%;
-        height: 100%;
+        opacity: 1;
     }
+}
+#profile-name .name-device p#a {
+    animation-delay: 0.5s;
+}
+#profile-name .name-device p#n {
+    animation-delay: 1s;
+}
+#profile-name .name-device p#i {
+    animation-delay: 1.5s;
+}
+#profile-name .name-device p#s {
+    animation-delay: 2s;
+}
+#profile-name .name-device p#aa {
+    animation-delay: 2.5s;
 }
 #profile-img .img-box {
     display: grid;
@@ -184,13 +191,13 @@ body {
     transition-delay: 1s;
 }
 #portfolio.active .projects a img#pilab {
-    transition-delay: 2s;
+    transition-delay: 1.5s;
 }
 #portfolio.active .projects a img#ktpan {
-    transition-delay: 3s;
+    transition-delay: 2s;
 }
 #portfolio.active .projects a img#zcc {
-    transition-delay: 4s;
+    transition-delay: 2.5s;
 }
 .exp-box {
     display: flex;
