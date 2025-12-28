@@ -728,6 +728,7 @@ header:hover .front-person-titles .title {
 }
 .portfolio-items > .item > a > .inner > .caption {
 	height: 225px;
+	background-color: #f1f1f1;
 }
 .portfolio-items > .item.odd > a > .inner > .caption {
 	background-color: rgba(7, 188, 204, .2);
