@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Portfolio - ZCCsoft (Thailand)</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../src/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../src/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/owl.theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../src/css/owl.transitions.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../src/css/style-index.css" />
+  </head>
+
+  <body>
+    <!--close button-->
+    <a href="../index.html" class="close-btn">
+      <span></span>
+      <span></span>
+    </a>
+    <!--/close button-->
+
+    <!--preloader-->
+    <div id="preloader">
+      <div class="loader">
+        <img src="../src/images/load.gif" alt="symp" />
+      </div>
+    </div>
+    <!--/preloader-->
+
+    <div id="wrapper">
+      <section class="single-work">
+        <div class="container">
+          <div class="row">
+            <h1>Experimental: Thai LegalCraft</h1>
+            <h3>Transforming Legal Complexity into Seamless Automation</h3>
+          </div>
+          <div class="work-content">
+            <div class="block">
+              <h4>Overview</h4>
+              <p>
+                <b>Thai LegalCraft</b> is a Proof of Concept (POC) platform
+                designed to democratize access to legal documentation. By
+                bridging the gap between complex legal jargon and user-friendly
+                interfaces, the project automates the generation of legally
+                binding loan agreements. Built in just <b>3 days</b>, this
+                project demonstrates the power of an <b>AI-Native Stack</b> in
+                rapid product development and process automation.
+              </p>
+              <h5>The Vision</h5>
+              <p>
+                Legal documents often act as a barrier for the general public
+                due to intimidating language and rigid formats. My goal was
+                twofold:
+              </p>
+              <ul>
+                <li>
+                  <b>Simplify Legal Access</b> Create a solution where users
+                  provide simple inputs and receive a professionally formatted,
+                  print-ready PDF.
+                </li>
+                <li>
+                  <b>Tech-Stack Exploration</b> Validate the efficiency of an
+                  AI-driven development workflow using <b>Lovable</b> and
+                  <b>n8n</b> to achieve a "Fast-to-Market" prototype.
+                </li>
+              </ul>
+
+              <h5>Tech Stack</h5>
+              <ul>
+                <li>
+                  <b>Frontend:</b> Lovable (AI-Native IDE) for a responsive,
+                  logic-heavy React UI.
+                </li>
+                <li>
+                  <b>Backend Automation:</b> n8n (Low-code Workflow Engine) for
+                  document orchestration.
+                </li>
+                <li>
+                  <b>Document Engine:</b> Google Docs API for dynamic template
+                  mapping.
+                </li>
+                <li>
+                  <b>Infrastructure:</b> Sevalla for Static Site Hosting and
+                  Environment Variable management.
+                </li>
+                <li>
+                  <b>Collaboration:</b> GitHub for CI/CD and version control.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Thai-LegalCraft-Landing.png"
+                  alt="Image of Dealer to Thai LegalCraft Landing Page"
+                />
+              </div>
+            </div>
+            <div class="block">
+              <h4>I. The 3-Day Sprint: Development Journey</h4>
+              <ul>
+                <li class="list-unstyled">
+                  <h5>Day 1: Logic & Architecture</h5>
+                  <p>
+                    I defined the core loan agreement logic, focusing on
+                    Thai-specific legal requirements. I utilized Lovable to
+                    generate a <b>High-Fidelity Prototype</b> that surpassed
+                    traditional wireframes. It didn't just look like a product,
+                    it functioned like one, handling real-time data binding
+                    between the form and a live A4 preview.
+                  </p>
+                </li>
+                <li class="list-unstyled">
+                  <h5>Day 2: Integration & Automation</h5>
+                  <p>
+                    I shifted focus to the backend, building a robust
+                    <b>n8n workflow</b>. The challenge was ensuring seamless
+                    data transfer between the frontend and the Google Docs
+                    engine. Leveraging my background in DevOps, I configured the
+                    API Webhooks and handled Authentication, ensuring each node
+                    in the workflow successfully transformed raw JSON into a
+                    structured document.
+                  </p>
+                </li>
+                <li class="list-unstyled">
+                  <h5>Day 3: Refinement & Deployment</h5>
+                  <p>
+                    The final push involved handling
+                    <b>Binary Data</b>, sending the generated PDF directly back
+                    to the user's browser for download. I addressed edge cases
+                    like Thai Baht text conversion (handling Satangs) and
+                    implemented "Smart Underscores" for empty fields to allow
+                    for manual handwriting post-printing. Finally, I deployed
+                    the frontend on Sevalla with full production environment
+                    variables.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Thai-LegalCraft-n8n-Workflow.png"
+                  alt="Image of Dealer to Thai LegalCraft n8n Workflow"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>II. Challenges & Key Learnings</h4>
+              <ul>
+                <li class="list-unstyled">
+                  <h5>AI as a Co-Pilot</h5>
+                  <p>
+                    Using Lovable shifted my role from a pure "Coder" to a
+                    <b>Product Manager/Business Analyst</b>. I focused on
+                    briefing requirements and refining outcomes. The AI handled
+                    the heavy lifting of UI logic such as Thai date formatting
+                    and complex if-else display cases, allowing me to focus on
+                    the system architecture and user flow.
+                  </p>
+                </li>
+                <li class="list-unstyled">
+                  <h5>Pragmatic Problem Solving</h5>
+                  <p>
+                    One of the most satisfying moments was successfully passing
+                    the PDF as binary data back to the UI. However, the true
+                    learning came from the "V1.0 Mindset." I realized that even
+                    with AI, perfection isn't the goal for a launch
+                    <b>Timeline and core functionality are</b>. I prioritized a
+                    working POC over a perfect UI when resource limits were met.
+                  </p>
+                </li>
+                <li class="list-unstyled">
+                  <h5>The Scalability of Low-Code</h5>
+                  <p>
+                    Testing n8n allowed me to see its immense value for
+                    <b>UX Workflow Testing</b> and <b>Idea Validation</b>. While
+                    I believe for this project, a custom HTML-to-PDF engine
+                    might be more scalable for high-volume, multi-template
+                    systems, n8n is an unbeatable tool for proving an idea's
+                    worth without a massive upfront investment in time and
+                    budget.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Thai-LegalCraft-Loan-Agreement.png"
+                  alt="Image of Thai LegalCraft Loan Agreement Form and Live Preview"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>III. Future Roadmap</h4>
+              <ul>
+                <li>
+                  <b>UI/UX Polish:</b> Adding loading overlays, full mobile
+                  responsiveness, and a more refined success state feedback
+                  loop.
+                </li>
+                <li>
+                  <b>Template Expansion:</b> Adding other contract types, such
+                  as Rental Agreement ans Vehicle Sale Agreements.
+                </li>
+                <li>
+                  <b>User Dashboard:</b> Implementing a "My Documents" section
+                  for users to manage, edit, and track their contract history.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>Reflections</h4>
+              <p>
+                This project was more than just a coding exercise, it was an
+                exploration of how modern tools can reduce the gap between an
+                idea and a production-ready application. In just 72 hours, I
+                went from a blank slate to a deployed platform, proving that the
+                right tech stack, combined with a clear vision, can solve
+                real-world problems with unprecedented speed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer section-block">
+        <div class="container">
+          <div class="row">
+            <div class="footer-title col-sm-6">
+              <h4>Wanisa Buayam</h4>
+            </div>
+
+            <div class="col-sm-6">
+              <ul class="footer-social">
+                <li>
+                  <a href="mailto:bywanisa@gmail.com">
+                    <i class="ion-email"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/bywanisa/">
+                    <i class="ion-social-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/bywanisa">
+                    <i class="ion-social-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../src/js/jquery.min.js"></script>
+    <script src="../src/js/jquery.stellar.min.js"></script>
+    <script src="../src/js/modernizr.js"></script>
+    <script src="../src/js/owl.carousel.min.js"></script>
+    <script src="../src/js/jquery.shuffle.min.js"></script>
+    <script src="../src/js/jquery.magnific-popup.min.js"></script>
+    <script src="../src/js/validator.min.js"></script>
+    <script src="../src/js/smoothscroll.js"></script>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>
