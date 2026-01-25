@@ -1,297 +1,795 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Case Study 1: Ziios Platform</title>
 
-  <title>Portfolio - Case Study 1: Ziios Platform</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../src/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../src/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/owl.theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../src/css/owl.transitions.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../src/css/style-index.css" />
+  </head>
 
-  <link rel="stylesheet" type="text/css" href="../src/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="../src/css/ionicons.min.css" />
-  <link rel="stylesheet" type="text/css" href="../src/css/owl.carousel.css" />
-  <link rel="stylesheet" type="text/css" href="../src/css/owl.theme.css" />
-  <link rel="stylesheet" type="text/css" href="../src/css/owl.transitions.css" />
-  <link rel="stylesheet" type="text/css" href="../src/css/style-index.css" />
-</head>
+  <body>
+    <!--close button-->
+    <a href="../index.html" class="close-btn">
+      <span></span>
+      <span></span>
+    </a>
+    <!--/close button-->
 
-<body>
-  <!--close button-->
-  <a href="../index.html" class="close-btn">
-    <span></span>
-    <span></span>
-  </a>
-  <!--/close button-->
-
-  <!--preloader-->
-  <div id="preloader">
-    <div class="loader">
-      <img src="../src/images/load.gif" alt="symp" />
-    </div>
-  </div>
-  <!--/preloader-->
-
-  <div id="wrapper">
-    <section class="single-work">
-      <div class="container">
-        <div class="row">
-          <h1>Case Study 1: Ziios Platform</h1>
-        </div>
-        <div class="work-content">
-          <div class="block">
-            <h4>The Challenge: Tackling Technical Debt</h4>
-            <p>
-              The <b>Dx1 DMS platform</b>, a Software as a Service solution
-              for Powersports and Motorcycle Dealerships, had grown over a
-              decade. It featured cover sales, inventory, accounting, and
-              marketing but the front-end was burdened with serious
-              <b>Technical Debt</b>.
-            </p>
-            <p>
-              This didn’t cause immediate user errors, but it slowed
-              development and created UX inconsistencies.
-            </p>
-            <ul>
-              <li>
-                <b>UI Inconsistency:</b> No Design System meant multiple color
-                shades, inconsistent fonts, and duplicate code for similar
-                components (e.g., 2-3 different nav bar code versions for the
-                same visual component). This led to fragmented user
-                experience.
-              </li>
-              <li>
-                <b>CSS Fragility:</b> Deep nesting, mixed selector practices,
-                and numerous inline styles made debugging painful. A small
-                change often broke unrelated parts, slowing down the team and
-                increasing QA time.
-              </li>
-              <li>
-                <b>Development Bottleneck:</b> Developers spent too much time
-                understanding and fixing old codes, slowing feature delivery
-                and causing complaints about page speed.
-              </li>
-            </ul>
-            <h5>The Solution: Building a Scalable Future</h5>
-            <p>My approach had two goals:</p>
-            <ul>
-              <li>
-                <b>Structural Sustainability</b> (better code and design)
-              </li>
-              <li>
-                <b>Strategic Business Value</b> (new features and compliance)
-              </li>
-            </ul>
-            <p>
-              I led these changes, bridging business needs and technical
-              execution.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="work-content">
-          <div class="block">
-            <h4>
-              I. Design System & Structure: Creating a Single Source of Truth
-            </h4>
-            <p>
-              <b>Goal:</b> Remove inconsistency and reduce Technical Debt.
-            </p>
-            <ul>
-              <li>
-                <b>Design (Figma):</b> Built a Design System for all visual
-                language (setting clear Color Palettes, Typography Hierarchy,
-                and reusable components).
-              </li>
-              <li>
-                <b>Code (SASS & Structure):</b> Converted designs into code
-                using SASS variables and set HTML/CSS naming standards. This
-                cut CSS duplication and conflicts, creating a solid
-                foundation.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="work-content">
-          <div class="block">
-            <h4>
-              II. Web Accessibility & Responsive: Expanding Reach & Compliance
-            </h4>
-            <p>
-              <b>Goal:</b> Meet U.S. legal standards and support non-desktop
-              use.
-            </p>
-            <ul>
-              <li>
-                <b>Accessibility (A11Y):</b> Achieved WCAG Level AA compliance
-                to reduce litigation risk. Integrated ARIA attributes and
-                semantic HTML into complex UI, despite legacy 3rd-Party
-                libraries limitations.
-              </li>
-              <li>
-                <b>Responsive Design:</b> Made the platform mobile-friendly.
-                For complex tables due to 3rd Party library limitations, based
-                on analytics showing mobile was used mainly for quick lookups.
-                I negotiated a trade-off: instead of full mobile tables, we
-                built a Card View with Quick Actions, accepting “good enough"
-                experience for non-core mobile use cases, thus saving
-                significant development time.
-              </li>
-            </ul>
-          </div>
-          <div class="block work-imgs img-1">
-            <div class="work-img">
-              <img src="../src/images/portfolios/Responsive-Table-Wireframe.png"
-                alt="Image of Responsive Table Wireframe" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="work-content">
-          <div class="block">
-            <h4>III. Adding High-Impact Features</h4>
-            <p>
-              <b>Goal:</b> Solve key pain points and create network value.
-            </p>
-            <h5>Dealer-to-Dealer Inventory Search (B2B Network)</h5>
-            <ul>
-              <li>
-                <b>Strategic Value:</b> Turned the platform into a dealer
-                ecosystem, helping sell slow-moving inventory and meet
-                customer demand even when out of stock.
-              </li>
-              <li>
-                <b>Trust & Consent:</b> Added privacy settings allowing
-                Dealers to control exactly what they share (unit level,
-                catalog level, and search radius) to build trust and encourage
-                network participation.
-              </li>
-              <li>
-                <b>Data Integrity:</b> Ensured data integrity by limiting
-                searches to official manufacturer units only, guaranteeing
-                that the core model identifier (key) was consistent across all
-                participating dealers.
-              </li>
-            </ul>
-          </div>
-
-          <div class="block work-imgs img-1">
-            <div class="work-img">
-              <img src="../src/images/portfolios/Dealer-to-Dealer-Inventory-Search-UX-Flow.png"
-                alt="Image of Dealer to Dealer Inventory Search UX Flow" />
-            </div>
-          </div>
-
-          <div class="block">
-            <h5>Physical Inventory for Mobile</h5>
-            <ul>
-              <li>
-                <b>The Problem:</b> Dealers staff struggled with inconvenience
-                to use large devices (laptops/desktops) for Physical Inventory
-                Counting inside storage areas/warehouses.
-              </li>
-              <li>
-                <b>The Solution:</b> I designed a Mobile-First UI/Flow
-                specifically for inventory counting, transforming the user's
-                phone into a quick, specialized data entry tool. This flow was
-                intentionally distinct from the complex desktop version,
-                focusing solely on fast numerical input and touch-friendly,
-                one of the most-used mobile features.
-              </li>
-            </ul>
-          </div>
-
-          <div class="block work-imgs img-1">
-            <div class="work-img">
-              <img src="../src/images/portfolios/Physical-Inventory-for-Mobile-Wireframe.jpg"
-                alt="Image of Mobile Physical Inventory Wireframe" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="work-content">
-          <div class="block">
-            <h4>Key Takeaways</h4>
-            <p>
-              My work positioned me as a Design-Code Bridge, driving both
-              systemic improvements and user-focused features.
-            </p>
-            <p>
-              <b>Impact Highlights:</b>
-            </p>
-            <ul>
-              <li>
-                <b>Structural Sustainability:</b> Reduced bugs and speed up
-                development by introducing design/code standards.
-              </li>
-              <li>
-                <b>Risk & Compliance:</b> Delivered WCAG AA compliance to
-                avoid legal issues.
-              </li>
-              <li>
-                <b>Strategic Decisions:</b> Balanced business needs and
-                technical limits (e.g., responsive tables).
-              </li>
-              <li>
-                <b>User Impact:</b> Created features like Mobile Inventory
-                that solved real-world problems, proving the value of deep
-                user context understanding.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="footer section-block">
-      <div class="container">
-        <div class="row">
-          <div class="footer-title col-sm-6">
-            <h4>Wanisa Buayam</h4>
-          </div>
-
-          <div class="col-sm-6">
-            <ul class="footer-social">
-              <li>
-                <a href="mailto:bywanisa@gmail.com">
-                  <i class="ion-email"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/in/bywanisa/">
-                  <i class="ion-social-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/bywanisa">
-                  <i class="ion-social-github"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <!--preloader-->
+    <div id="preloader">
+      <div class="loader">
+        <img src="../src/images/load.gif" alt="symp" />
       </div>
     </div>
-  </div>
+    <!--/preloader-->
 
-  <script src="../src/js/jquery.min.js"></script>
-  <script src="../src/js/jquery.stellar.min.js"></script>
-  <script src="../src/js/modernizr.js"></script>
-  <script src="../src/js/owl.carousel.min.js"></script>
-  <script src="../src/js/jquery.shuffle.min.js"></script>
-  <script src="../src/js/jquery.magnific-popup.min.js"></script>
-  <script src="../src/js/validator.min.js"></script>
-  <script src="../src/js/smoothscroll.js"></script>
-  <script src="../src/js/script.js"></script>
-</body>
+    <div id="wrapper">
+      <section class="single-work">
+        <div class="container">
+          <div class="row">
+            <h1>Case Study 1: The DMS Platform</h1>
+          </div>
+          <div class="work-content">
+            <div class="block">
+              <h3>Reducing Systemic UX Risk in a Legacy Platform</h3>
+              <p>
+                In this project, I focused on identifying and reducing systemic
+                UX risks in a long-lived platform, balancing accessibility,
+                structural stability, and ongoing product demands.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>Section 1: Context & Platform Reality</h4>
+              <p>
+                The platform is a decade-old SaaS used daily by Powersports and
+                Motorcycle Dealerships to manage leads, sales, inventory,
+                accounting, and marketing.
+              </p>
+              <p>
+                Over time, the product expanded feature-by-feature without a
+                unified design or front-end foundation. While the system
+                remained functional, this growth introduced hidden complexity
+                that affected development speed, UX consistency, and long-term
+                scalability.
+              </p>
+              <p>
+                The challenge was not a failing product, but a mature platform
+                carrying accumulated design and technical decisions, where small
+                changes increasingly created outsized risk.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Systemic-UX-Risk-in-a-Legacy-DMS-Platform.jpg"
+                  alt="Image of Systemic UX Risk in a Legacy DMS Platform"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>Section 2: UX Audit - Identifying Systemic Risks</h4>
+              <p>
+                As the platform evolved over more than a decade, UX and
+                front-end Technical Debt accumulated quietly. While
+                functionality remained intact, system-level risks began to
+                surface through inconsistency, fragility, and reduced
+                development efficiency.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Systemic-UX-Risk-Map.jpg"
+                  alt="Image of Systemic UX Risk Map"
+                />
+              </div>
+            </div>
+
+            <div class="block">
+              <h5>UI Inconsistency</h5>
+              <p>
+                The absence of a Design System led to fragmented visual
+                patterns. Similar components were implemented multiple times
+                with slight variations, increasing cognitive load and weakening
+                user trust.
+              </p>
+              <h5>Fragile Front-End Structure</h5>
+              <p>
+                Deeply nested CSS, mixed selector practices, and inline styles
+                made the UI difficult to maintain. Minor changes often caused
+                unintended side effects, slowing iteration and increasing QA
+                effort.
+              </p>
+              <h5>Development Bottlenecks</h5>
+              <p>
+                Developers spent excessive time navigating legacy code instead
+                of delivering improvements. This indirectly impacted UX through
+                delayed features and performance complaints.
+              </p>
+              <h5>Accessibility and Responsiveness Gaps</h5>
+              <p>
+                Inconsistent accessibility and limited mobile support created
+                compliance and usability risks, particularly in regulated
+                markets and non-desktop use cases.
+              </p>
+              <h5>Audit Summary</h5>
+              <p>
+                The platform’s challenges were not isolated UI issues, but
+                compounding systemic risks. Without structural intervention,
+                future changes would become slower, riskier, and more costly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>Section 3: Strategic UX Direction</h4>
+              <p>
+                Following the audit, the core question was not what to redesign,
+                but where to intervene first to reduce risk without stopping
+                product delivery.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Effort-Impact-Matrix.jpg"
+                  alt="Image of Effort Impact Matrix"
+                />
+              </div>
+            </div>
+
+            <div class="block">
+              <h5>
+                Decision 1 - Start with Accessibility and Responsive, Not a Full
+                System Rebuild
+              </h5>
+              <h6>I. Context</h6>
+              <p>
+                The platform had accumulated UX and front-end Technical Debt,
+                but ongoing business demands required continuous feature
+                delivery.
+              </p>
+              <h6>II. Options Considered</h6>
+              <ul>
+                <li>
+                  Rebuild the Design System upfront before shipping new features
+                </li>
+                <li>
+                  Address high-risk UX gaps while gradually stabilizing the
+                  system
+                </li>
+              </ul>
+              <h6>III. Decision</h6>
+              <p>
+                I prioritized Accessibility and Responsive improvements as the
+                first intervention.
+              </p>
+              <h6>IV. Rationale</h6>
+              <ul>
+                <li>
+                  Accessibility issues carried immediate legal and compliance
+                  risks.
+                </li>
+                <li>
+                  Responsive gaps affected real operational use cases,
+                  especially quick mobile tasks.
+                </li>
+                <li>
+                  Improvements in these areas forced early standardization of
+                  layout, structure, and semantic HTML. Laying groundwork for
+                  system stability without blocking delivery.
+                </li>
+              </ul>
+            </div>
+
+            <div class="block">
+              <h5>
+                Decision 2 - Stabilize the System Incrementally, Alongside Real
+                Product Work
+              </h5>
+              <h6>I. Context</h6>
+              <p>
+                A full Design System and CSS cleanup could not be treated as a
+                standalone project with a fixed end date.
+              </p>
+              <h6>II. Decision</h6>
+              <p>
+                Instead of a big-bang refactor, system improvements were
+                introduced progressively, embedded within ongoing feature
+                development and maintenance work.
+              </p>
+              <h6>III. Rationale</h6>
+              <ul>
+                <li>
+                  This approach reduced risk while keeping the product moving
+                  forward.
+                </li>
+                <li>
+                  System decisions were validated against real use cases rather
+                  than theoretical completeness.
+                </li>
+                <li>
+                  Each feature contributed back to system consistency, rather
+                  than adding new fragmentation.
+                </li>
+              </ul>
+            </div>
+
+            <div class="block">
+              <h5>Strategic Outcome</h5>
+              <p>
+                This strategy allowed the platform to reduce systemic UX risks
+                while continuing to deliver business value. System stability was
+                not a prerequisite for progress, it was built through it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>Section 4: Accessibility & Responsive as Risk Mitigation</h4>
+              <p>
+                Accessibility and Responsive design were treated not as visual
+                enhancements, but as risk mitigation measures addressing
+                compliance, usability, and long-term maintainability.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Accessibility-Responsive-as-Foundation.jpg"
+                  alt="Image of Accessibility and Responsive as Foundation"
+                />
+              </div>
+            </div>
+
+            <div class="block">
+              <h5>Accessibility - Reducing Compliance and Usability Risk</h5>
+              <h6>I. Problem Addressed</h6>
+              <p>
+                Inconsistent accessibility practices created legal exposure in
+                regulated markets and limited usability for users relying on
+                assistive technologies.
+              </p>
+              <h6>II. Intervention</h6>
+              <p>
+                Accessibility improvements were implemented to align the
+                platform with WCAG Level AA standards.
+              </p>
+              <ul>
+                <li>
+                  Applied semantic HTML and ARIA attributes across complex UI
+                  flows
+                </li>
+                <li>
+                  Improved color contrast, focus states, and keyboard navigation
+                </li>
+                <li>
+                  Worked within constraints of legacy and third-party libraries
+                </li>
+              </ul>
+              <p>
+                Rather than aiming for theoretical perfection, efforts focused
+                on meaningful compliance and practical usability.
+              </p>
+            </div>
+
+            <div class="block">
+              <h5>Responsive Design - Supporting Real-World Usage Patterns</h5>
+              <h6>I. Problem Addressed</h6>
+              <p>
+                The platform was primarily designed for desktop, while mobile
+                usage was growing for specific operational tasks.
+              </p>
+              <h6>II. Intervention</h6>
+              <p>
+                Responsive behavior was introduced based on actual usage
+                context.
+              </p>
+              <ul>
+                <li>
+                  Optimized layouts for non-desktop access without attempting
+                  full feature parity
+                </li>
+                <li>
+                  For complex data tables constrained by third-party libraries,
+                  a Card View with Quick Actions was introduced
+                </li>
+                <li>
+                  This provided a “good enough” mobile experience for quick
+                  lookups, avoiding unnecessary complexity
+                </li>
+              </ul>
+              <p>
+                This approach balanced usability improvements with development
+                effort and technical limitations.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Responsive-Table-Wireframe.png"
+                  alt="Image of Responsive Table Wireframe"
+                />
+              </div>
+            </div>
+
+            <div class="block">
+              <h5>System-Level Impact</h5>
+              <p>
+                Accessibility and Responsive work acted as an early stabilizing
+                layer for the platform.
+              </p>
+              <ul>
+                <li>Encouraged consistent layout and structural patterns</li>
+                <li>Reduced ad-hoc UI decisions</li>
+                <li>
+                  Established constraints that later Design System and CSS
+                  improvements could build upon
+                </li>
+              </ul>
+            </div>
+
+            <div class="block">
+              <h5>Outcome</h5>
+              <p>
+                By addressing accessibility and responsive gaps early, the
+                platform reduced compliance risk and expanded practical
+                usability, while creating a more stable foundation for ongoing
+                UX and system improvements.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>Section 5: System-Level Interventions</h4>
+              <h5>Design System & Front-End Structure Stabilization</h5>
+              <p>
+                Rather than treating the Design System as a standalone
+                deliverable, it was introduced as a structural intervention to
+                reduce UX inconsistency and front-end fragility over time.
+              </p>
+            </div>
+
+            <div class="block">
+              <h5>Establishing a Single Source of Truth</h5>
+              <h6>I. Problem Addressed</h6>
+              <p>
+                UI inconsistency and duplicated implementations increased
+                cognitive load for users and maintenance cost for the team.
+              </p>
+              <h6>II. Intervention</h6>
+              <p>
+                A Design System was defined to standardize visual language and
+                interaction patterns across the platform.
+              </p>
+              <ul>
+                <li>
+                  Defined core color palettes, typography hierarchy, and spacing
+                  rules
+                </li>
+                <li>
+                  Consolidated recurring UI patterns into reusable components
+                </li>
+                <li>
+                  Established clear usage guidelines to prevent future
+                  divergence
+                </li>
+              </ul>
+              <p>
+                This created a shared reference point for design and
+                development, reducing ambiguity and repeated decision-making.
+              </p>
+            </div>
+
+            <div class="block">
+              <h5>Translating Design Consistency into Code Structure</h5>
+              <h6>I. Problem Addressed</h6>
+              <p>
+                The existing CSS structure was fragile, tightly coupled, and
+                prone to side effects.
+              </p>
+              <h6>II. Intervention</h6>
+              <p>
+                Design decisions were translated directly into code standards.
+              </p>
+              <ul>
+                <li>Introduced SASS variables to centralize visual tokens</li>
+                <li>
+                  Standardized naming conventions and reduced deep selector
+                  nesting
+                </li>
+                <li>
+                  Gradually removed inline styles and duplicated rules during
+                  active development
+                </li>
+              </ul>
+              <p>
+                Rather than a full refactor, cleanup occurred incrementally,
+                prioritizing areas touched by ongoing work.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Single-Source-of-Truth-Diagram.jpg"
+                  alt="Image of Single Source of Truth Diagram"
+                />
+              </div>
+            </div>
+
+            <div class="block">
+              <h5>System Stabilization Through Progressive Adoption</h5>
+              <p>
+                The Design System was not enforced all at once. Adoption
+                happened progressively as features were updated or introduced.
+              </p>
+              <p>This approach ensured:</p>
+              <ul>
+                <li>System rules were validated by real use cases</li>
+                <li>
+                  Legacy constraints were respected without blocking progress
+                </li>
+                <li>
+                  Consistency increased over time instead of regressing with
+                  each new feature
+                </li>
+              </ul>
+            </div>
+
+            <div class="block">
+              <h5>Outcome</h5>
+              <p>
+                The platform shifted from ad-hoc UI decisions to a more
+                predictable and maintainable system. Design consistency
+                improved, front-end changes became safer to implement, and
+                future UX work could build on a more stable foundation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>
+                Section 6: Targeted UX Improvements Enabled by System Stability
+              </h4>
+              <p>
+                As systemic risks were reduced through accessibility,
+                responsive, and structural improvements, the platform gained the
+                flexibility to address high-impact user problems without
+                introducing further fragmentation.
+              </p>
+              <p>
+                These initiatives were intentionally selective, focused on areas
+                where UX improvements could deliver clear operational or
+                strategic value.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Dealer-to-Dealer-Inventory-Search-UX-Flow.png"
+                  alt="Image of Dealer to Dealer Inventory Search UX Flow"
+                />
+              </div>
+            </div>
+
+            <div class="block">
+              <h5>
+                Dealer-to-Dealer Inventory Search: Turning Inventory into a
+                Network Asset
+              </h5>
+
+              <h6>I. Problem Addressed</h6>
+              <p>
+                Dealers struggled to meet customer demand when specific units
+                were out of stock, while slow-moving inventory remained unsold
+                across the network.
+              </p>
+
+              <h6>II. UX & System Considerations</h6>
+              <ul>
+                <li>
+                  Required consistency in core data models across multiple
+                  dealers
+                </li>
+                <li>
+                  Needed clear trust boundaries to encourage participation
+                </li>
+                <li>
+                  Depended on predictable UI patterns to avoid adding complexity
+                </li>
+              </ul>
+
+              <h6>III. Solution</h6>
+              <p>
+                A dealer-to-dealer inventory search was introduced, allowing
+                dealers to discover available units beyond their own inventory.
+              </p>
+              <ul>
+                <li>
+                  Privacy controls enabled dealers to define what data was
+                  shared and at what level
+                </li>
+                <li>
+                  Search scope and visibility were clearly communicated to
+                  maintain trust
+                </li>
+                <li>
+                  Data integrity was enforced by limiting results to official
+                  manufacturer units, ensuring consistent identifiers across
+                  participants
+                </li>
+              </ul>
+
+              <h6>IV. Outcome</h6>
+              <p>
+                The platform evolved from a single-dealer tool into a connected
+                ecosystem, supporting collaboration without compromising data
+                reliability or user confidence.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Physical-Inventory-Counting-on-Mobile.jpg"
+                  alt="Image of Physical Inventory Counting on Mobile"
+                />
+              </div>
+            </div>
+
+            <div class="block">
+              <h5>
+                Physical Inventory Counting on Mobile: Designing for Context,
+                Not Feature Parity
+              </h5>
+
+              <h6>I. Problem Addressed</h6>
+              <p>
+                Inventory counting in storage areas was cumbersome when using
+                desktops or laptops, leading to inefficient and error-prone
+                workflows.
+              </p>
+
+              <h6>II. UX & System Considerations</h6>
+              <ul>
+                <li>Mobile usage was task-specific and time-sensitive</li>
+                <li>
+                  Desktop complexity could not be directly transferred to mobile
+                </li>
+                <li>
+                  Input accuracy and speed were more critical than full feature
+                  access
+                </li>
+              </ul>
+
+              <h6>III. Solution</h6>
+              <p>
+                A mobile-first inventory counting flow was designed as a
+                focused, specialized experience.
+              </p>
+              <ul>
+                <li>Optimized for fast numeric input and touch interaction</li>
+                <li>Stripped down to essential actions only</li>
+                <li>
+                  Intentionally diverged from the desktop UI to match real-world
+                  constraints
+                </li>
+              </ul>
+
+              <h6>IV. Outcome</h6>
+              <p>
+                Users gained a practical tool aligned with their physical work
+                environment, improving efficiency without increasing system
+                complexity.
+              </p>
+            </div>
+
+            <div class="block">
+              <h5>Why These Improvements Were Possible</h5>
+              <p>
+                These UX improvements were not isolated feature builds. They
+                were enabled by earlier efforts to stabilize layout structure,
+                accessibility patterns, and front-end conventions. By operating
+                within emerging system constraints, each feature reinforced
+                consistency rather than adding new exceptions.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Physical-Inventory-Comparing-Wireframe.jpg"
+                  alt="Image of Mobile Physical Inventory Comparing and Wireframe"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>Section 7: Outcomes & Observed Impact</h4>
+              <p>
+                While not all outcomes were captured through quantitative
+                metrics, the changes resulted in clear, observable improvements
+                in how the platform was designed, built, and evolved over time.
+              </p>
+              <h5>Increased System Predictability</h5>
+              <p>
+                Design and front-end decisions became more consistent and easier
+                to reason about. Shared patterns and constraints reduced
+                ambiguity, allowing teams to move forward with greater
+                confidence and fewer unintended side effects.
+              </p>
+              <h5>Safer and Faster Iteration</h5>
+              <p>
+                Incremental changes were less likely to break unrelated areas.
+                QA cycles became more focused, and UX improvements could be
+                introduced with reduced risk compared to earlier stages of the
+                platform.
+              </p>
+              <h5>Reduced Compliance and Operational Risk</h5>
+              <p>
+                Achieving WCAG Level AA alignment addressed accessibility gaps
+                that previously posed legal and usability risks.
+              </p>
+              <p>
+                Responsive improvements expanded practical usability without
+                introducing unnecessary complexity.
+              </p>
+              <h5>Clearer UX Trade-Offs</h5>
+              <p>
+                UX decisions shifted from reactive fixes to intentional
+                trade-offs. Limitations, such as “good enough” mobile
+                experiences for non-core use cases, were explicitly defined,
+                documented, and aligned with real usage context.
+              </p>
+              <h5>Stronger Foundation for Future Work</h5>
+              <p>
+                Rather than locking the team into rigid solutions, the platform
+                gained a more stable baseline that future features and
+                improvements could build upon incrementally.
+              </p>
+            </div>
+
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/Outcomes-Observed-Impact.jpg"
+                  alt="Image of Outcomes Observed Impact"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>Key Takeaways</h4>
+              <p>
+                This project reinforced how UX problems in long-lived platforms
+                rarely exist in isolation. Most issues were symptoms of deeper
+                systemic instability rather than isolated design flaws.
+              </p>
+              <h5>UX as Risk Management</h5>
+              <p>
+                UX work was most effective when framed as risk reduction, not
+                just visual improvement. Addressing accessibility,
+                responsiveness, and structural consistency early helped prevent
+                larger issues from compounding over time.
+              </p>
+              <h5>Systems Over Screens</h5>
+              <p>
+                Improving individual screens had limited value without
+                stabilizing the underlying system. Design Systems and front-end
+                structure became tools to support safer decisions, not just
+                faster delivery.
+              </p>
+              <h5>Progress Over Perfection</h5>
+              <p>
+                Stability was built incrementally, alongside real product
+                demands. Practical constraints and trade-offs were acknowledged
+                rather than avoided, resulting in solutions that could be
+                sustained.
+              </p>
+              <h5>Design as a Bridge</h5>
+              <p>
+                The work sat at the intersection of user needs, technical
+                constraints, and business risk. Bridging these perspectives
+                enabled UX decisions that were realistic, defensible, and
+                aligned with long-term platform health.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer section-block">
+        <div class="container">
+          <div class="row">
+            <div class="footer-title col-sm-6">
+              <h4>Wanisa Buayam</h4>
+            </div>
+
+            <div class="col-sm-6">
+              <ul class="footer-social">
+                <li>
+                  <a href="mailto:bywanisa@gmail.com">
+                    <i class="ion-email"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/bywanisa/">
+                    <i class="ion-social-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/bywanisa">
+                    <i class="ion-social-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../src/js/jquery.min.js"></script>
+    <script src="../src/js/jquery.stellar.min.js"></script>
+    <script src="../src/js/modernizr.js"></script>
+    <script src="../src/js/owl.carousel.min.js"></script>
+    <script src="../src/js/jquery.shuffle.min.js"></script>
+    <script src="../src/js/jquery.magnific-popup.min.js"></script>
+    <script src="../src/js/validator.min.js"></script>
+    <script src="../src/js/smoothscroll.js"></script>
+    <script src="../src/js/script.js"></script>
+  </body>
 </html>
