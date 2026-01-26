@@ -523,7 +523,9 @@ header:hover .front-person-titles .title {
 }
 .about-info > p{
 	line-height:1.8em;
-	margin-top:-.4em;
+}
+.skills-block ul > li {
+	padding-bottom: 20px;
 }
 
 /* Resume Section */
