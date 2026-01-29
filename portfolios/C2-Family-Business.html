@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js">
   <head>
     <meta charset="utf-8" />
@@ -47,40 +47,114 @@
           </div>
           <div class="work-content">
             <div class="block">
-              <h4>The Challenge: Managing a Business Without Clear Data</h4>
-              <p><b>Role: </b>Project Lead & Developer (Low-code)</p>
-              <p><b>Stack: </b>Google AppSheet, Google Sheets</p>
+              <h4>Context & Constraints</h4>
               <p>
-                My family’s garden and landscaping supply shop has been a stable
-                business for years. However, it relied entirely on manual paper
-                records and the manager's intuition. When I joined, I noticed a
-                few areas that could be improved.
+                This project was conducted in a small, family-owned garden and
+                landscaping supply shop operating with highly traditional,
+                paper-based processes. The business had remained stable for
+                years, but daily operations relied heavily on manual records and
+                on-the-spot judgment rather than accessible data.
               </p>
+              <p>
+                Only two front-of-house staff interacted directly with
+                operational systems. Sales staff at the counter, one of whom
+                also acted as the store manager responsible for procurement,
+                attendance tracking, and payroll calculations. The rest of the
+                workforce consisted of labor-based roles with no system
+                interaction, reinforcing the need for a simple and clearly
+                scoped solution.
+              </p>
+              <p>Several constraints defined the problem space:</p>
               <ul>
                 <li>
-                  <b>Intuition over Data: </b>Procurement was based on
-                  "eyeballing" stock levels rather than actual sales data,
-                  leading to frequent out-of-stock scenarios and missed sales
-                  opportunities.
+                  <b>SME scale with limited budget</b>, ruling out enterprise
+                  POS systems or long-term custom development
                 </li>
                 <li>
-                  <b>The Owner’s Dependency: </b>To know what was happening in
-                  the shop, an owner or manager had to be physically present.
-                  There was no way to check sales or stock levels from outside.
+                  <b>Low technical confidence</b>, among system users,
+                  increasing the risk of resistance and errors
                 </li>
                 <li>
-                  <b>Unusable Data: </b> Unusable Data: While daily sales were
-                  recorded on paper, making it very hard to analyze which
-                  products drove the best cash flow or profit margins.
+                  <b>Non-standard inventory</b>, including items without
+                  barcodes or consistent SKUs
+                </li>
+                <li>
+                  <b>Business continuity requirements</b>, where daily
+                  operations could not be disrupted for transformation
                 </li>
               </ul>
-              <h5>The Strategy: A Simple Digital Tool, Low-Code Approach</h5>
               <p>
-                I decided to build a
-                <b>custom POS (Point of Sale) solution </b>using
-                <b>AppSheet</b>. This allowed me to prioritize two things:
-                Cost-efficiency and Ease of Use (UX) for a non-technical
-                workforce.
+                Rather than treating these as limitations to overcome, I
+                approached them as design constraints that shaped every decision
+                by anchoring the solution in practicality, clarity, and
+                long-term usability.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block work-imgs img-1-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/C2-Constraint-Snapshot.jpg"
+                  alt="Image of Constraint Snapshot"
+                />
+              </div>
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/C2-Symptom-vs-Root-Cause.jpg"
+                  alt="Image of Symptom vs Root Cause"
+                />
+              </div>
+            </div>
+            <div class="block">
+              <h4>Problem Framing</h4>
+              <p>
+                Initial issues appeared operational such as frequent stock
+                shortages, time-consuming end-of-day summaries, and limited
+                visibility into sales performance unless someone was physically
+                present at the shop.
+              </p>
+              <p>
+                However, closer observation revealed that these were only
+                surface-level symptoms.
+              </p>
+              <h6>
+                The core problem was not the absence of tools, but the absence
+                of a shared source of truth.
+              </h6>
+              <p>
+                Sales data existed only on paper, making it costly to aggregate
+                and nearly impossible to analyze. Stock decisions relied on
+                visual estimation, while payroll and attendance summaries
+                required manual calculations twice a month. As a result,
+                decisions were delayed, inconsistent, and heavily dependent on
+                individual experience.
+              </p>
+              <p>From a stakeholder perspective, the pain points differed:</p>
+              <ul>
+                <li>
+                  <b>Owner: </b>Limited real-time visibility and reliance on
+                  intuition for procurement decisions.
+                </li>
+                <li>
+                  <b>Front-of-house staff: </b>Repetitive calculations, fear of
+                  making irreversible mistakes, and low confidence in digital
+                  tools.
+                </li>
+                <li>
+                  <b>Business: </b>Missed sales opportunities, inefficient
+                  purchasing, and no clear understanding of which products drove
+                  cash flow.
+                </li>
+              </ul>
+              <p>
+                Reframing the problem around data trust rather than software
+                implementation, shifted the goal from “digitizing records” to
+                enabling confident, data-informed decisions across daily
+                operations.
               </p>
             </div>
           </div>
@@ -89,55 +163,152 @@
         <div class="container">
           <div class="work-content">
             <div class="block">
-              <h4>I. Step-by-Step Improvements</h4>
+              <h4>Decision & Trade-offs</h4>
               <p>
-                I didn't change everything at once. I divided the work into two
-                phases to make it easier for the team:
+                All key decisions in this project were shaped by the scale of
+                the business and the realities of a traditional SME environment.
+                The goal was not to implement the most advanced system, but the
+                most appropriate one.
               </p>
-              <ul>
-                <li>
-                  <b>Phase 1 (Core Operations): </b>Digital Product Catalog,
-                  PO/SO Management, and Daily/Monthly Summaries.
-                </li>
-                <li>
-                  <b>Phase 2 (Optimization): </b>Low-stock alerts, Staff
-                  Attendance & Payroll calculation, and Digital Invoicing.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="work-content">
-            <div class="block">
-              <h4>II. Helping the Team Adapt</h4>
-              <p>
-                The biggest goal was to make sure the staff felt comfortable
-                using the new tool. I used a few simple strategies:
-              </p>
-              <ul>
-                <li>
-                  <b>Familiar Form Factor: </b>Since the staff already used
-                  smartphones, a tablet felt more natural to them than a
-                  computer.
-                </li>
-                <li>
-                  <b>Clean and Simple Design: </b>I designed a "Clean UI" I only
-                  showed the buttons and information they absolutely needed
-                  based on their roles (Admin vs. Sales). This made the app easy
-                  to learn and reduced mistakes.
-                </li>
-                <li>
-                  <b>Focus on Benefits: </b>I framed the system not as a
-                  "monitoring tool," but as a "helper" that saved them from
-                  doing long manual calculations at the end of each day.
-                </li>
-              </ul>
             </div>
             <div class="block work-imgs img-1">
               <div class="work-img">
                 <img
+                  src="../src/images/portfolios/C2-Risk-Impact-Matrix.jpg"
+                  alt="Image of Risk and Impact Matrix"
+                />
+              </div>
+            </div>
+            <div class="block">
+              <h5>Platform choice: Low-code over enterprise or custom build</h5>
+              <ul>
+                <li>
+                  Off-the-shelf POS systems were cost-prohibitive and assumed
+                  standardized inventory and high technical readiness.
+                </li>
+                <li>
+                  Fully custom development offered flexibility but exceeded the
+                  business’s time and maintenance capacity.
+                </li>
+                <li>
+                  A low-code approach (Google AppSheet + Google Sheets) was
+                  chosen to prioritize affordability, fast iteration, and
+                  adaptability.
+                </li>
+              </ul>
+              <h5>Speed of iteration over UI perfection</h5>
+              <p>
+                Using a low-code platform limited fine-grained UI control. This
+                trade-off was accepted to enable rapid changes based on real
+                usage, which mattered more than pixel-perfect interfaces in this
+                context.
+              </p>
+              <h5>Tablet-first interaction model</h5>
+              <ul>
+                <li>
+                  Tablets aligned better with existing staff behavior and
+                  physical workspace at the counter.
+                </li>
+                <li>
+                  The decision minimized behavioral change and reduced anxiety
+                  among low-tech users.
+                </li>
+              </ul>
+              <h5>Role-based access instead of feature-rich screens</h5>
+              <ul>
+                <li>
+                  Only two front-of-house staff interacted with the system.
+                </li>
+                <li>
+                  Interfaces were scoped by role to reduce cognitive load and
+                  error risk.
+                </li>
+              </ul>
+              <h5>Deferred optimization by design</h5>
+              <ul>
+                <li>
+                  Automation features (alerts, payroll, attendance) were
+                  intentionally postponed.
+                </li>
+                <li>
+                  Establishing trust in daily data entry was prioritized over
+                  early efficiency gains.
+                </li>
+              </ul>
+              <p>
+                Across these trade-offs, decisions consistently favored clarity,
+                stability, and adoption over technical sophistication or
+                theoretical scalability.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work-content">
+            <div class="block">
+              <h4>Execution & Iteration</h4>
+              <p>
+                Execution was designed as a gradual transition rather than a
+                full system rollout. Adoption, not deployment, was treated as
+                the primary success metric.
+              </p>
+            </div>
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/C2-Progressive-Rollout-Timeline.jpg"
+                  alt="Image of Progressive Rollout Timeline"
+                />
+              </div>
+            </div>
+            <div class="block">
+              <h5>Phased rollout to reduce risk</h5>
+              <ul>
+                <li><b>Phase 1: </b>Digital Sales Orders only (staff)</li>
+                <li>
+                  <b>Phase 2: </b>Purchase Orders, attendance, and payroll
+                  automation (manager)
+                </li>
+              </ul>
+              <p>
+                Responsibilities were expanded only after usage became habitual
+                and data reliability was established.
+              </p>
+              <h5>Progressive access over immediate automation</h5>
+              <ul>
+                <li>PO creation was initially restricted to the owner</li>
+                <li>
+                  Access was expanded once confidence and accuracy improved
+                </li>
+                <li>
+                  Automation features were deliberately deferred to avoid
+                  amplifying early errors
+                </li>
+              </ul>
+              <h5>Iteration through observation</h5>
+              <p>
+                Instead of formal training or documentation, iteration was
+                driven by direct observation of daily workflows. Friction points
+                were addressed by simplifying inputs and aligning screen flow
+                with real counter behavior.
+              </p>
+              <h5>Change management through framing</h5>
+              <p>
+                The system was consistently positioned as a tool to reduce
+                repetitive work, not as a monitoring mechanism. This framing
+                played a key role in reducing resistance among low-tech users.
+              </p>
+              <p>
+                Throughout execution, my role focused on facilitation and
+                decision-making, ensuring that technical complexity never
+                exceeded what the team and business could realistically support.
+              </p>
+            </div>
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  style="max-height: 1000px"
                   src="../src/images/portfolios/Appsheet-Custom-POS-Flow.png"
                   alt="Image of Appsheet Custom POS Workflow"
                 />
@@ -149,35 +320,67 @@
         <div class="container">
           <div class="work-content">
             <div class="block">
-              <h4>
-                The Result: Real-time Remote Oversight & Data-Driven Growth
-              </h4>
+              <h4>Outcome & Impact</h4>
               <p>
-                The transformation has moved the business from a traditional
-                shop to a modern, scalable, and data-driven operation that I can
-                now monitor from anywhere.
+                The impact of the system extended beyond operational efficiency.
+                Its primary value lay in improving decision quality and reducing
+                uncertainty across daily operations.
               </p>
-              <ul>
-                <li>
-                  <b>Remote Tracking: </b>I can now see real-time sales and
-                  stock levels from my phone, even when I'm not at the shop.
-                </li>
-                <li>
-                  <b>Accurate Inventory: </b>By tracking sales digitally, we
-                  reduced stock mistakes to less than 2%, despite dealing with
-                  non-barcoded items (like clay pots and soil).
-                </li>
-                <li>
-                  <b>Role-Based Access Control: </b>Implemented security layers
-                  to ensure data integrity and prevent unauthorized access to
-                  sensitive financial records.
-                </li>
-                <li>
-                  <b>Better Decisions: </b>We now have a clear list of what
-                  sells best. We no longer guess what to buy, but use the data to
-                  make smarter choices for the business.
-                </li>
-              </ul>
+            </div>
+            <div class="block work-imgs img-1">
+              <div class="work-img">
+                <img
+                  src="../src/images/portfolios/C2-Outcomes-Impact.jpg"
+                  alt="Image of Outcomes and Impact"
+                />
+              </div>
+            </div>
+            <div class="block">
+              <h5>Improved data reliability and visibility</h5>
+              <p>
+                Sales and stock information became accessible in near real time,
+                enabling remote visibility without requiring physical presence
+                at the shop. Inventory discrepancies were reduced to under 3%,
+                despite the absence of barcodes or standardized SKUs.
+              </p>
+              <h5>Meaningful time savings in routine work</h5>
+              <p>
+                Manual end-of-day sales summaries, which previously took
+                approximately 30 minutes, were significantly reduced. Payroll
+                and attendance calculations once requiring about one hour per
+                cycle were simplified through structured data and basic
+                automation.
+              </p>
+              <h5>
+                Shift from intuition-driven to evidence-informed decisions
+              </h5>
+              <p>
+                Procurement decisions were no longer based on visual estimation
+                alone. Historical sales data provided a clearer understanding of
+                product performance and cash flow contributors, allowing
+                purchasing decisions to be made with greater confidence and
+                consistency.
+              </p>
+              <h5>Increased staff confidence and system trust</h5>
+              <p>
+                As the system matured, staff hesitation toward digital tools
+                diminished. Role-based access and progressive responsibility
+                helped reduce fear of irreversible mistakes, replacing avoidance
+                with routine use and ownership.
+              </p>
+              <h5>Stronger operational governance</h5>
+              <p>
+                Role-based access controls improved data integrity and protected
+                sensitive financial information. Decision-making became less
+                dependent on individuals and more grounded in shared, reliable
+                information.
+              </p>
+              <p>
+                Overall, the system shifted the business from reactive
+                operations toward a more stable, data-informed mode of
+                management without increasing technical or cognitive burden on
+                the team.
+              </p>
             </div>
 
             <div class="block work-imgs img-1">
@@ -194,16 +397,61 @@
         <div class="container">
           <div class="work-content">
             <div class="block">
-              <h4>Personal Takeaway</h4>
+              <h4>Reflection as a Practitioner</h4>
               <p>
-                This project was a masterclass in Pragmatic Problem Solving. It
-                taught me that Digital Transformation doesn't have to be
-                complicated or expensive. It’s about understanding the real
-                problems of a business and creating a tool that people enjoy
-                using and managing the transition with empathy and strategy. By
-                building this system, I’ve made the business more stable and
-                gained back my time to pursue new opportunities.
+                This project reinforced my belief that effective UX is rarely
+                about interfaces alone. In environments with limited resources
+                and low technical confidence, the real challenge lies in
+                designing systems that people trust enough to use consistently.
               </p>
+              <p>
+                Working in a constrained SME context, I experienced product
+                ownership not as feature delivery, but as continuous
+                decision-making. Wearing multiple hats as facilitator,
+                decision-maker, and builder, highlighted the importance of
+                sequencing, scope control, and timing over technical ambition.
+              </p>
+              <p>
+                Rather than pursuing feature completeness or visual refinement,
+                I focused on reducing cognitive load, managing risk, and
+                building confidence through progressive change. Decisions such
+                as limiting access, deferring automation, and simplifying inputs
+                were intentional UX choices, designed to support real behavior,
+                not ideal workflows.
+              </p>
+              <p>
+                Progress came not from building more features, but from asking
+                the right questions at the right time:<br />
+                <i
+                  >What is safe to change now? What should wait? And what level
+                  of accuracy is “good enough” to move forward?</i
+                >
+              </p>
+              <p>
+                From an optimization perspective, the most valuable outcome was
+                not efficiency, but reliability. Once data became trustworthy,
+                better decisions followed naturally. By grounding decisions in
+                observed behavior and operational realities, I was able to
+                introduce change without disrupting daily work.
+              </p>
+              <p>
+                This experience shaped how I approach complex systems,
+                prioritizing clarity over sophistication, people over processes,
+                and long-term usability over short-term wins. It also
+                strengthened my interest in roles that sit at the intersection
+                of business, users, and systems, where value is created not by
+                building more, but by deciding better.
+              </p>
+              <h5>Key principles</h5>
+              <ul>
+                <li>Adoption is a design problem, not a training problem</li>
+                <li>Optimization should follow trust, not precede it</li>
+                <li>Good products emerge from sequencing, not speed</li>
+                <li>
+                  The right solution is often the most appropriate one, not the
+                  most advanced
+                </li>
+              </ul>
             </div>
           </div>
         </div>
