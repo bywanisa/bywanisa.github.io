@@ -617,6 +617,9 @@ header:hover .front-person-titles .title {
 	margin:0;
 	line-height:1.7em;
 }
+.timeline > li > .timeline-content > ul > li{
+	line-height:1.7em;
+}
 .timeline > li.timeline-header{
 	background:#FFF;
 	position:relative;
@@ -874,7 +877,7 @@ header:hover .front-person-titles .title {
 }
 
 .work-content > .work-imgs > .work-img > img {
-	max-height: 500px;
+	max-height: 600px;
 }
 
 /*=======================================================================
