@@ -880,6 +880,10 @@ header:hover .front-person-titles .title {
 	max-height: 600px;
 }
 
+.work-content > .work-imgs > .work-img > img.mh-100 {
+	max-height: 100%;
+}
+
 /*=======================================================================
 	Single Post Page
 =======================================================================*/
