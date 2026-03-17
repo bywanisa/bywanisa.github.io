@@ -805,6 +805,22 @@ header:hover .front-person-titles .title {
 	text-decoration:line-through;
 }
 
+/* Email Portfolio */
+.email-portfolio .email-item {
+	max-height: 300px;
+	overflow: hidden scroll;
+}
+.email-portfolio .email-item img {
+	filter: brightness(90%);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.email-portfolio .email-item:hover img {
+	filter: brightness(100%);
+	transform: scale(1.05);
+} 
+
 /* Work Page */
 .single-work{
 	padding:100px 0 60px;
