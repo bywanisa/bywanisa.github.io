@@ -807,7 +807,7 @@ header:hover .front-person-titles .title {
 
 /* Email Portfolio */
 .email-portfolio .email-item {
-	max-height: 300px;
+	max-height: 400px;
 	overflow: hidden scroll;
 }
 .email-portfolio .email-item img {
@@ -936,6 +936,9 @@ header:hover .front-person-titles .title {
 	}
 }
 @media (max-width:768px){
+	.email-portfolio .email-item {
+		overflow-y: hidden;
+	}
 }
 @media (max-width: 578px){
 	header { 
